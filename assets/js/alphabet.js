@@ -31,7 +31,7 @@ function shuffleArray(array) {
 }
 
 function loadAlphabetData() {
-    fetch('https://kaansrflioglu.github.io/korean-practices/data/alphabet.json')
+    fetch('https://raw.githubusercontent.com/kaansrflioglu/korean-practices/refs/heads/main/data/alphabet.json')
         .then(response => response.json())
         .then(data => {
             alphabetData = shuffleArray(data); 
