@@ -1,0 +1,280 @@
+[
+    {
+        "id": 1,
+        "word_kr": "베개",
+        "word_tr": "Yastık"
+    },
+    {
+        "id": 2,
+        "word_kr": "배",
+        "word_tr": "Gemi"
+    },
+    {
+        "id": 3,
+        "word_kr": "깨다",
+        "word_tr": "Kırmak"
+    },
+    {
+        "id": 4,
+        "word_kr": "싸다",
+        "word_tr": "Ucuz"
+    },
+    {
+        "id": 5,
+        "word_kr": "새다",
+        "word_tr": [
+            "Akmak",
+            "Sızmak"
+        ]
+    },
+    {
+        "id": 6,
+        "word_kr": "쬐다",
+        "word_tr": "Güneşlenmek"
+    },
+    {
+        "id": 7,
+        "word_kr": "끄다",
+        "word_tr": "Kapatmak"
+    },
+    {
+        "id": 8,
+        "word_kr": "외우다",
+        "word_tr": "Ezberlemek"
+    },
+    {
+        "id": 9,
+        "word_kr": "수박",
+        "word_tr": "Karpuz"
+    },
+    {
+        "id": 10,
+        "word_kr": "눈",
+        "word_tr": "Göz"
+    },
+    {
+        "id": 11,
+        "word_kr": "옷",
+        "word_tr": "Giysi"
+    },
+    {
+        "id": 12,
+        "word_kr": "달",
+        "word_tr": "Ay"
+    },
+    {
+        "id": 13,
+        "word_kr": "밤",
+        "word_tr": [
+            "Kestane",
+            "Gece"
+        ]
+    },
+    {
+        "id": 14,
+        "word_kr": "집",
+        "word_tr": "Ev"
+    },
+    {
+        "id": 15,
+        "word_kr": "빵",
+        "word_tr": "Ekmek"
+    },
+    {
+        "id": 16,
+        "word_kr": "날",
+        "word_tr": "Gün"
+    },
+    {
+        "id": 17,
+        "word_kr": "밥",
+        "word_tr": [
+            "Yemek",
+            "Pilav"
+        ]
+    },
+    {
+        "id": 18,
+        "word_kr": "방",
+        "word_tr": "Oda"
+    },
+    {
+        "id": 19,
+        "word_kr": "남",
+        "word_tr": "Yabancı"
+    },
+    {
+        "id": 20,
+        "word_kr": "일",
+        "word_tr": "İş"
+    },
+    {
+        "id": 21,
+        "word_kr": "입",
+        "word_tr": "Ağız"
+    },
+    {
+        "id": 22,
+        "word_kr": "산",
+        "word_tr": "Dağ"
+    },
+    {
+        "id": 23,
+        "word_kr": "가정",
+        "word_tr": "Ev"
+    },
+    {
+        "id": 24,
+        "word_kr": "삽",
+        "word_tr": "Kürek"
+    },
+    {
+        "id": 25,
+        "word_kr": "밖",
+        "word_tr": "Dışında"
+    },
+    {
+        "id": 26,
+        "word_kr": "사전",
+        "word_tr": "Sözlük"
+    },
+    {
+        "id": 27,
+        "word_kr": "사절",
+        "word_tr": "Elçi"
+    },
+    {
+        "id": 28,
+        "word_kr": "사전",
+        "word_tr": "Tarihi Kalıntılar"
+    },
+    {
+        "id": 29,
+        "word_kr": "달다",
+        "word_tr": "Tatlı"
+    },
+    {
+        "id": 30,
+        "word_kr": "닫다",
+        "word_tr": "Kapatmak"
+    },
+    {
+        "id": 31,
+        "word_kr": "닦다",
+        "word_tr": "Silmek"
+    },
+    {
+        "id": 32,
+        "word_kr": "깔다",
+        "word_tr": "Sermek"
+    },
+    {
+        "id": 33,
+        "word_kr": "짓다",
+        "word_tr": [
+            "Oluşturmak",
+            "Kurmak"
+        ]
+    },
+    {
+        "id": 34,
+        "word_kr": "질다",
+        "word_tr": "Fazla Sulu"
+    },
+    {
+        "id": 35,
+        "word_kr": "집다",
+        "word_tr": "Tutmak"
+    },
+    {
+        "id": 36,
+        "word_kr": "바다",
+        "word_tr": "Deniz"
+    },
+    {
+        "id": 37,
+        "word_kr": "포도",
+        "word_tr": "Üzüm"
+    },
+    {
+        "id": 38,
+        "word_kr": "짐",
+        "word_tr": "Bagaj"
+    },
+    {
+        "id": 39,
+        "word_kr": "한국",
+        "word_tr": "Kore"
+    },
+    {
+        "id": 40,
+        "word_kr": "한글",
+        "word_tr": "Kore Alfabesi"
+    },
+    {
+        "id": 41,
+        "word_kr": "차다",
+        "word_tr": "Dolu"
+    },
+    {
+        "id": 42,
+        "word_kr": "찾다",
+        "word_tr": "Bulmak"
+    },
+    {
+        "id": 43,
+        "word_kr": "어머니",
+        "word_tr": "Anne"
+    },
+    {
+        "id": 44,
+        "word_kr": "아버지",
+        "word_tr": "Baba"
+    },
+    {
+        "id": 45,
+        "word_kr": "도서관",
+        "word_tr": "Kütüphane"
+    },
+    {
+        "id": 46,
+        "word_kr": "도시락",
+        "word_tr": [
+            "Beslenme Çantası",
+            "Sefer Tası"
+        ]
+    },
+    {
+        "id": 47,
+        "word_kr": "가족",
+        "word_tr": "Aile"
+    },
+    {
+        "id": 48,
+        "word_kr": "휴식",
+        "word_tr": "Mola"
+    },
+    {
+        "id": 49,
+        "word_kr": "화사",
+        "word_tr": "Şirket"
+    },
+    {
+        "id": 50,
+        "word_kr": "켜다",
+        "word_tr": [
+            "Açmak",
+            "Yakmak"
+        ]
+    },
+    {
+        "id": 51,
+        "word_kr": "쏟다",
+        "word_tr": "Dökmek"
+    },
+    {
+        "id": 52,
+        "word_kr": "씻다",
+        "word_tr": "Yıkamak"
+    }
+]

@@ -1,0 +1,202 @@
+[
+    {
+        "id": 1,
+        "word_kr": "ㅏ",
+        "word_tr": "A"
+    },
+    {
+        "id": 2,
+        "word_kr": "ㅓ",
+        "word_tr": "O"
+    },
+    {
+        "id": 3,
+        "word_kr": "ㅗ",
+        "word_tr": "O"
+    },
+    {
+        "id": 4,
+        "word_kr": "ㅜ",
+        "word_tr": "U"
+    },
+    {
+        "id": 5,
+        "word_kr": "ㅡ",
+        "word_tr": "I"
+    },
+    {
+        "id": 6,
+        "word_kr": "ㅑ",
+        "word_tr": "YA"
+    },
+    {
+        "id": 7,
+        "word_kr": "ㅕ",
+        "word_tr": "YO"
+    },
+    {
+        "id": 8,
+        "word_kr": "ㅛ",
+        "word_tr": "YO"
+    },
+    {
+        "id": 9,
+        "word_kr": "ㅠ",
+        "word_tr": "YU"
+    },
+    {
+        "id": 10,
+        "word_kr": "ㅣ",
+        "word_tr": "İ"
+    },
+    {
+        "id": 11,
+        "word_kr": "ㅐ",
+        "word_tr": "E"
+    },
+    {
+        "id": 12,
+        "word_kr": "ㅒ",
+        "word_tr": "YE"
+    },
+    {
+        "id": 13,
+        "word_kr": "ㅔ",
+        "word_tr": "E"
+    },
+    {
+        "id": 14,
+        "word_kr": "ㅖ",
+        "word_tr": "YE"
+    },
+    {
+        "id": 15,
+        "word_kr": "ㅘ",
+        "word_tr": "WA"
+    },
+    {
+        "id": 16,
+        "word_kr": "ㅙ",
+        "word_tr": "WE"
+    },
+    {
+        "id": 17,
+        "word_kr": "ㅚ",
+        "word_tr": "WE"
+    },
+    {
+        "id": 18,
+        "word_kr": "ㅞ",
+        "word_tr": "WE"
+    },
+    {
+        "id": 19,
+        "word_kr": "ㅝ",
+        "word_tr": "WO"
+    },
+    {
+        "id": 20,
+        "word_kr": "ㅟ",
+        "word_tr": "Wİ"
+    },
+    {
+        "id": 21,
+        "word_kr": "ㅢ",
+        "word_tr": "Iİ"
+    },
+    {
+        "id": 22,
+        "word_kr": "ㄱ",
+        "word_tr": "G"
+    },
+    {
+        "id": 23,
+        "word_kr": "ㄴ",
+        "word_tr": "N"
+    },
+    {
+        "id": 24,
+        "word_kr": "ㄷ",
+        "word_tr": "D"
+    },
+    {
+        "id": 25,
+        "word_kr": "ㄹ",
+        "word_tr": "L"
+    },
+    {
+        "id": 26,
+        "word_kr": "ㅁ",
+        "word_tr": "M"
+    },
+    {
+        "id": 27,
+        "word_kr": "ㅂ",
+        "word_tr": "B"
+    },
+    {
+        "id": 28,
+        "word_kr": "ㅅ",
+        "word_tr": "S"
+    },
+    {
+        "id": 29,
+        "word_kr": "ㅇ",
+        "word_tr": "NG"
+    },
+    {
+        "id": 30,
+        "word_kr": "ㅈ",
+        "word_tr": "C"
+    },
+    {
+        "id": 31,
+        "word_kr": "ㅊ",
+        "word_tr": "Ç"
+    },
+    {
+        "id": 32,
+        "word_kr": "ㅋ",
+        "word_tr": "K"
+    },
+    {
+        "id": 33,
+        "word_kr": "ㅌ",
+        "word_tr": "T"
+    },
+    {
+        "id": 34,
+        "word_kr": "ㅍ",
+        "word_tr": "P"
+    },
+    {
+        "id": 35,
+        "word_kr": "ㅎ",
+        "word_tr": "H"
+    },
+    {
+        "id": 36,
+        "word_kr": "ㄲ",
+        "word_tr": "GG"
+    },
+    {
+        "id": 37,
+        "word_kr": "ㄸ",
+        "word_tr": "DD"
+    },
+    {
+        "id": 38,
+        "word_kr": "ㅃ",
+        "word_tr": "BB"
+    },
+    {
+        "id": 39,
+        "word_kr": "ㅆ",
+        "word_tr": "SS"
+    },
+    {
+        "id": 40,
+        "word_kr": "ㅉ",
+        "word_tr": "CC"
+    }
+]
