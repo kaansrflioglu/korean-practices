@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Korece Pratik</title>
+    <title>Korece Sayılar</title>
 
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/14797/14797337.png" type="image/x-icon" />
     <meta name="keywords" content="" />
@@ -20,14 +20,14 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="../../../assets/css/style.css">
 </head>
 
 <body>
     <!--Navbar Start-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand fw-bold d-flex align-items-center" href="javascript:window.location.reload();">
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="../../../">
                 <i class="fa-solid fa-language"></i>&nbsp;Korece Pratik</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar">
@@ -36,18 +36,18 @@
             <div class="collapse navbar-collapse d-none d-lg-flex justify-content-end">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="./pages/alphabet">Alfabe</a>
+                        <a class="nav-link" href="../../../pages/alphabet">Alfabe</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false"> Sayılar </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./pages/numbers/native-korean">Native Kore Sayıları</a></li>
-                            <li><a class="dropdown-item" href="./pages/numbers/chinese-origin">Çin Sayıları</a></li>
+                            <li><a class="dropdown-item active" href="../../../pages/numbers/native-korean">Native Kore Sayıları</a></li>
+                            <li><a class="dropdown-item" href="../../../pages/numbers/chinese-origin">Çin Sayıları</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./pages/words">Kelimeler</a>
+                        <a class="nav-link" href="../../../pages/words">Kelimeler</a>
                     </li>
                 </ul>
             </div>
@@ -60,18 +60,18 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/alphabet">Alfabe</a>
+                            <a class="nav-link" href="../../../pages/alphabet">Alfabe</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false"> Sayılar </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./pages/numbers/native-korean">Native Kore Sayıları</a></li>
-                                <li><a class="dropdown-item" href="./pages/numbers/chinese-origin">Çin Sayıları</a></li>
+                                <li><a class="dropdown-item active" href="../../../pages/numbers/native-korean">Native Kore Sayıları</a></li>
+                                <li><a class="dropdown-item" href="../../../pages/numbers/chinese-origin/">Çin Sayıları</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/words">Kelimeler</a>
+                            <a class="nav-link" href="../../../pages/words">Kelimeler</a>
                         </li>
                     </ul>
                 </div>
@@ -80,35 +80,10 @@
     </nav>
     <!--Navbar End-->
 
-    <div class="container-lg mt-5">
-        <div class="d-flex flex-column align-items-center justify-content-center">
-            <h3 class="mb-3">Hoş Geldiniz!</h3>
-            <h5 class="text-center mb-4">
-                Bu site temel Korece temellerinizi güçlendirmenizde size yardımcı olmak için yapıldı.
-            </h5>
-            <hr class="w-100 my-4">
-            <p class="text-center mb-0">
-                Dilerseniz beni GitHub veya LinkedIn üzerinden takip edebilirsiniz.
-            </p>
-            <div class="d-flex justify-content-center mt-3">
-                <a href="https://github.com/kaansrflioglu" target="_blank" rel="noopener noreferrer"
-                    class="btn btn-primary btn-lg mx-2 d-flex align-items-center">
-                    <i class="fab fa-github me-2"></i> GitHub
-                </a>
-                <a href="https://www.linkedin.com/in/kaansereflioglu/" target="_blank" rel="noopener noreferrer"
-                    class="btn btn-primary btn-lg mx-2 d-flex align-items-center">
-                    <i class="fab fa-linkedin me-2"></i> LinkedIn
-                </a>
-            </div>
-        </div>
+    <div id="container">
+        
     </div>
 
-
-
-
-
-    <script src="assets/js/main.js"></script>
-    <script src="../../assets/js/alphabet.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
@@ -116,6 +91,8 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 
 </html>

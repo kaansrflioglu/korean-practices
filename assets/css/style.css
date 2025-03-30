@@ -123,7 +123,7 @@ h1 {
 #flash-notification .close-btn {
     position: absolute;
     top: 10px;
-    right: 10px;
+    right: 20px;
     font-size: 18px;
     cursor: pointer;
     color: black;
@@ -230,6 +230,24 @@ h1 {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
+}
+
+
+.dropdown-menu .dropdown-item{
+    color: rgb(0, 0, 0, 0.65);
+}
+
+.dropdown-menu .dropdown-item:active{
+    background-color: transparent;
+}   
+
+.dropdown-menu .active{
+    background-color: transparent;
+    color: black;
+}
+
+.dropdown-menu .active:hover{
+    background-color: #F8F9FA;
 }
 
 @media (max-width: 560px) {
