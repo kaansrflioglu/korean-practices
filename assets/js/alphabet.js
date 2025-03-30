@@ -1,24 +1,34 @@
 let alphabetData = [];
 let currentWordIndex = 0;
+let correctCount = 0;
+let incorrectCount = 0;
 
 function displayNextAlphabetWord() {
     const wordElement = document.getElementById('alphabet-word');
     wordElement.textContent = alphabetData[currentWordIndex].word_kr;
 }
 
+function updateScore() {
+    document.getElementById('correct-count').textContent = correctCount;
+    document.getElementById('incorrect-count').textContent = incorrectCount;
+}
+
 function checkAlphabetAnswer() {
     const inputElement = document.getElementById('alphabet-input');
     const feedbackElement = document.getElementById('alphabet-feedback');
-    const userAnswer = inputElement.value.trim().toUpperCase();
+    const userAnswer = inputElement.value.trim().toLocaleUpperCase('tr-TR');
 
     if (userAnswer === alphabetData[currentWordIndex].word_tr) {
         feedbackElement.textContent = "Doğru cevap!";
+        correctCount++;
         currentWordIndex = (currentWordIndex + 1) % alphabetData.length;
         displayNextAlphabetWord();
     } else {
         feedbackElement.textContent = "Yanlış cevap! Tekrar deneyin.";
+        incorrectCount++;
     }
 
+    updateScore();
     inputElement.value = '';
 }
 
@@ -48,5 +58,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (event.key === 'Enter') {
             checkAlphabetAnswer();
         }
+    });
+
+    inputElement.addEventListener('input', () => {
+        inputElement.value = inputElement.value.toLocaleUpperCase('tr-TR');
     });
 });
