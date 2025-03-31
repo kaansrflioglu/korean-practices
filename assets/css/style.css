@@ -1,6 +1,9 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 h1 {
@@ -247,6 +250,15 @@ h1 {
 
 .dropdown-menu .active:hover{
     background-color: #F8F9FA;
+}
+
+.index-img {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
 }
 
 @media (max-width: 560px) {
