@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 
+
 <body>
     <!--Navbar Start-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
@@ -93,10 +94,25 @@
         </div>
     </nav>
     <!--Navbar End-->
-
-    <div id="container">
-
+    <div class="container mt-5 text-center">
+        <h1 class="mb-4">Korece Kelimeler</h1>
+        <p class="lead">Türkçe karşılığını yazınız. </p>
+        <a href="#" class="open-flash">
+            <div id="word-display" class="display-4 mb-3 open-flash-text">&nbsp;</div>
+        </a>
+    
+        <div class="mb-5 justify-content-center">
+            <input type="text" id="word-input" class="form-control custom-input mt-3 mb-4"
+                placeholder="Türkçe karşılığını yazınız">
+            <button class="btn btn-primary custom-button custom-primary-button" onclick="checkWordAnswer()">KONTROL
+                ET</button>
+        </div>
+        <div id="score" class="score-container">
+            <p class="text-success">Doğru Cevaplar: <span id="correct-count">0</span></p>
+            <p class="text-danger">Yanlış Cevaplar: <span id="incorrect-count">0</span></p>
+        </div>
     </div>
+    
 
     <!--Footer Start-->
     <footer class="footer mt-auto py-3 bg-light">
@@ -106,7 +122,7 @@
     </footer>
     <!--Footer End-->
 
-    <script src="../../assets/js/alphabet.js"></script>
+    <script src="../../assets/js/words.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>

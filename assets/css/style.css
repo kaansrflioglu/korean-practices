@@ -169,12 +169,20 @@ h1 {
     background-color: #E74D3D40;
 }
 
+#flash-notification.info .progress-bar {
+    background-color: #E4A11C40;
+}
+
 #flash-notification.success .progress-bar span {
     background-color: #07BC0C;
 }
 
 #flash-notification.error .progress-bar span {
     background-color: #E74D3C;
+}
+
+#flash-notification.info .progress-bar span {
+    background-color: #E4A11B;
 }
 
 #flash-notification .progress-bar span {
@@ -185,6 +193,26 @@ h1 {
     transition: width 0.1s linear;
 }
 
+.open-flash {
+    text-decoration: none;
+    display: inline-block;
+    width: auto; 
+}
+
+.open-flash h1:hover {
+    color: #007bff;
+}
+
+.open-flash-text {
+    color: black !important;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.open-flash-text:hover {
+    color: #007bff !important;
+}
+
 .open-popup {
     text-decoration: none;
     display: inline-block;
@@ -193,6 +221,16 @@ h1 {
 
 .open-popup h1:hover {
     color: #007bff;
+}
+
+.open-popup-text {
+    color: black !important;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.open-popup-text:hover {
+    color: #007bff !important;
 }
 
 .popup {
@@ -233,7 +271,6 @@ h1 {
     text-decoration: none;
     cursor: pointer;
 }
-
 
 .dropdown-menu .dropdown-item{
     color: rgb(0, 0, 0, 0.65);

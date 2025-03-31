@@ -13,25 +13,6 @@ function updateScore() {
     document.getElementById('incorrect-count').textContent = incorrectCount;
 }
 
-function checkAlphabetAnswer() {
-    const inputElement = document.getElementById('alphabet-input');
-    const feedbackElement = document.getElementById('alphabet-feedback');
-    const userAnswer = inputElement.value.trim().toLocaleUpperCase('tr-TR');
-
-    if (userAnswer === alphabetData[currentWordIndex].word_tr) {
-        feedbackElement.textContent = "Doğru cevap!";
-        correctCount++;
-        currentWordIndex = (currentWordIndex + 1) % alphabetData.length;
-        displayNextAlphabetWord();
-    } else {
-        feedbackElement.textContent = "Yanlış cevap! Tekrar deneyin.";
-        incorrectCount++;
-    }
-
-    updateScore();
-    inputElement.value = '';
-}
-
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -65,7 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
 function checkAlphabetAnswer() {
     const inputElement = document.getElementById('alphabet-input');
     const userAnswer = inputElement.value.trim().toLocaleUpperCase('tr-TR');
@@ -75,6 +55,8 @@ function checkAlphabetAnswer() {
         currentWordIndex = (currentWordIndex + 1) % alphabetData.length;
         displayNextAlphabetWord();
         showFlashNotification("Doğru cevap!", false); 
+    } else if (userAnswer === "") {
+        showFlashNotification("Cevap boş olamaz!", false, "info"); 
     } else {
         incorrectCount++;
         showFlashNotification("Yanlış cevap! Tekrar deneyin.", true); 
@@ -84,7 +66,7 @@ function checkAlphabetAnswer() {
     inputElement.value = '';
 }
 
-function showFlashNotification(message, isError = false) {
+function showFlashNotification(message, isError = false, type = 'success') {
     let container = document.getElementById('flash-notification-container');
     if (!container) {
         container = document.createElement('div');
@@ -94,20 +76,33 @@ function showFlashNotification(message, isError = false) {
 
     const notificationElement = document.createElement('div');
     notificationElement.id = 'flash-notification';
-    notificationElement.classList.add(isError ? 'error' : 'success'); 
+    
+    let notificationClass = '';
+    let iconClass = '';
+    let iconColor = '';
+    
+    if (isError) {
+        notificationClass = 'error';
+        iconClass = 'fa-circle-exclamation';
+        iconColor = '#E74D3C'; 
+    } else if (type === 'info') {
+        notificationClass = 'info';
+        iconClass = 'fa-circle-info';
+        iconColor = '#E4A11B';  
+    } else {
+        notificationClass = 'success';
+        iconClass = 'fa-circle-check'; 
+        iconColor = '#07BC0C';
+    }
+
+    notificationElement.classList.add(notificationClass);
 
     const contentElement = document.createElement('div');
     contentElement.classList.add('content');
 
     const iconElement = document.createElement('i');
-    iconElement.classList.add('fa-solid');
-    if (isError) {
-        iconElement.classList.add('fa-circle-exclamation');
-        iconElement.style.color = '#E74D3C'; 
-    } else {
-        iconElement.classList.add('fa-circle-check'); 
-        iconElement.style.color = '#07BC0C';
-    }
+    iconElement.classList.add('fa-solid', iconClass);
+    iconElement.style.color = iconColor;
 
     iconElement.style.fontSize = '22px';
     iconElement.style.marginRight = '10px';

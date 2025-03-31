@@ -1,35 +1,34 @@
-let numberData = [];
-let currentNumberIndex = 0;
-let numberCorrectCount = 0;
-let numberIncorrectCount = 0;
+let wordsData = [];
+let currentWordIndex = 0;
+let correctCount = 0;
+let incorrectCount = 0;
 
-function displayNextNumberWord() {
-    const wordElement = document.getElementById('number-word');
-    wordElement.textContent = numberData[currentNumberIndex].num_kr;
+function displayNextWord() {
+    const wordElement = document.getElementById('word-display');
+    wordElement.textContent = wordsData[currentWordIndex].word_kr;
 }
 
-function updateNumberScore() {
-    document.getElementById('number-correct-count').textContent = numberCorrectCount;
-    document.getElementById('number-incorrect-count').textContent = numberIncorrectCount;
+function updateScore() {
+    document.getElementById('correct-count').textContent = correctCount;
+    document.getElementById('incorrect-count').textContent = incorrectCount;
 }
 
-function checkNumberAnswer() {
-    const inputElement = document.getElementById('number-input');
-    const userAnswer = inputElement.value.trim();
+function checkWordAnswer() {
+    const inputElement = document.getElementById('word-input');
+    const feedbackElement = document.getElementById('word-feedback');
+    const userAnswer = inputElement.value.trim().toLocaleUpperCase('tr-TR');
 
-    if (userAnswer === numberData[currentNumberIndex].num) {
-        numberCorrectCount++;
-        currentNumberIndex = (currentNumberIndex + 1) % numberData.length;
-        displayNextNumberWord();
-        showFlashNotification("Doğru cevap!", false);
-    } else if (userAnswer === "") {
-        showFlashNotification("Cevap boş olamaz!", false, "info"); 
+    if (userAnswer === wordsData[currentWordIndex].word_tr) {
+        feedbackElement.textContent = "Doğru cevap!";
+        correctCount++;
+        currentWordIndex = (currentWordIndex + 1) % wordsData.length;
+        displayNextWord();
     } else {
-        numberIncorrectCount++;
-        showFlashNotification("Yanlış cevap! Tekrar deneyin.", true);
+        feedbackElement.textContent = "Yanlış cevap! Tekrar deneyin.";
+        incorrectCount++;
     }
 
-    updateNumberScore();
+    updateScore();
     inputElement.value = '';
 }
 
@@ -41,26 +40,64 @@ function shuffleArray(array) {
     return array;
 }
 
-function loadNumberData() {
-    fetch('https://raw.githubusercontent.com/kaansrflioglu/korean-practices/refs/heads/main/data/chinese-origin-numbers.json')
+function loadWordsData() {
+    fetch('https://raw.githubusercontent.com/kaansrflioglu/korean-practices/refs/heads/main/data/words.json')
         .then(response => response.json())
         .then(data => {
-            numberData = shuffleArray(data);
-            displayNextNumberWord();
+            wordsData = shuffleArray(data); 
+            displayNextWord();
         })
         .catch(error => console.error('Veri yüklenirken hata oluştu:', error));
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    loadNumberData();
+    loadWordsData();
 
-    const inputElement = document.getElementById('number-input');
+    const inputElement = document.getElementById('word-input');
     inputElement.addEventListener('keydown', (event) => {
         if (event.key === 'Enter') {
-            checkNumberAnswer();
+            checkWordAnswer();
         }
     });
+
+    inputElement.addEventListener('input', () => {
+        inputElement.value = inputElement.value.toLocaleUpperCase('tr-TR');
+    });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const openFlashLink = document.querySelector('.open-flash');
+    openFlashLink.addEventListener('click', () => {
+        const wordTr = Array.isArray(wordsData[currentWordIndex].word_tr) && wordsData[currentWordIndex].word_tr.length > 1
+            ? wordsData[currentWordIndex].word_tr.join(', ')
+            : wordsData[currentWordIndex].word_tr;
+        showFlashNotification(`${wordTr}`, false, 'info');
+    });
+});
+
+function checkWordAnswer() {
+    const inputElement = document.getElementById('word-input');
+    const userAnswer = inputElement.value.trim().toLocaleUpperCase('tr-TR');  
+
+    const correctAnswers = Array.isArray(wordsData[currentWordIndex].word_tr)
+        ? wordsData[currentWordIndex].word_tr.map(word => word.toLocaleUpperCase('tr-TR'))
+        : [wordsData[currentWordIndex].word_tr.toLocaleUpperCase('tr-TR')];
+
+    if (correctAnswers.includes(userAnswer)) {
+        correctCount++;
+        currentWordIndex = (currentWordIndex + 1) % wordsData.length;
+        displayNextWord();
+        showFlashNotification("Doğru cevap!", false); 
+    } else if (userAnswer === "") {
+        showFlashNotification("Cevap boş olamaz!", false, "info"); 
+    } else {
+        incorrectCount++;
+        showFlashNotification("Yanlış cevap! Tekrar deneyin.", true); 
+    }
+
+    updateScore();
+    inputElement.value = '';
+}
 
 function showFlashNotification(message, isError = false, type = 'success') {
     let container = document.getElementById('flash-notification-container');
@@ -149,18 +186,3 @@ function showFlashNotification(message, isError = false, type = 'success') {
         }
     }, 100);
 }
-
-document.querySelector('.open-popup').addEventListener('click', function(event) {
-    event.preventDefault(); 
-    document.getElementById('popup').style.display = 'block';
-});
-
-document.querySelector('.close').addEventListener('click', function() {
-    document.getElementById('popup').style.display = 'none';
-});
-
-window.addEventListener('click', function(event) {
-    if (event.target === document.getElementById('popup')) {
-        document.getElementById('popup').style.display = 'none';
-    }
-});
