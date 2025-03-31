@@ -37,13 +37,13 @@ h1 {
     color: #dc3545;
 }
 
-.alphabet-input {
+.custom-input {
     width: 100%; 
     display: block;
     height: 56px;
 }
 
-.alphabet-button {
+.custom-button {
     width: 100%; 
     display: block;
     height: 46px;
@@ -205,19 +205,18 @@ h1 {
 }
 
 .popup-content {
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    margin: auto;
+    position: fixed;
+    top: calc(50% + 28px); 
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: block;
-    width: 70%; 
-    max-width: 700px;
+    height: 75%;
+    max-width: 80%;
 }
 
 .close {
     position: absolute;
-    top: 60px;
+    top: 56px;
     right: 35px;
     color: #fff;
     font-size: 40px;
